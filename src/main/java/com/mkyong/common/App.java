@@ -12,7 +12,7 @@ public class App
     	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
     	 
         CustomerDAO customerDAO = (CustomerDAO) context.getBean("customerDAO");
-        Customer customer = new Customer(1, "mkyong",28);
+        Customer customer = new Customer(2, "mkyong",28);
         customerDAO.insert(customer);
     	
         Customer customer1 = customerDAO.findByCustomerId(1);
