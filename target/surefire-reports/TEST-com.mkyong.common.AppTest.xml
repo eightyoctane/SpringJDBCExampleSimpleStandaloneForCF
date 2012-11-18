@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.007" errors="0" skipped="0" tests="1" name="com.mkyong.common.AppTest">
+<testsuite failures="0" time="0.008" errors="0" skipped="0" tests="1" name="com.mkyong.common.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -16,13 +16,13 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExample"/>
+    <property name="user.dir" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF"/>
     <property name="java.runtime.version" value="1.6.0_37-b06-434-11M3909"/>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
-    <property name="basedir" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExample"/>
+    <property name="basedir" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/surefire/surefirebooter3384561419455382998.jar"/>
+    <property name="surefire.real.class.path" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/surefire/surefirebooter5288598214219499241.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/87/f6jc5fpj2q36crdysvy2_6f00000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -30,7 +30,7 @@
     <property name="os.name" value="Mac OS X"/>
     <property name="sun.jnu.encoding" value="MacRoman"/>
     <property name="java.library.path" value=".:/Users/ggross/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="surefire.test.class.path" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/test-classes:/Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/classes:/Users/ggross/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/ggross/.m2/repository/org/springframework/spring/2.5.6/spring-2.5.6.jar:/Users/ggross/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/ggross/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar:/Users/ggross/.m2/repository/org/cloudfoundry/cloudfoundry-runtime/0.8.1/cloudfoundry-runtime-0.8.1.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/test-classes:/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/classes:/Users/ggross/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/ggross/.m2/repository/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/ggross/.m2/repository/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/ggross/.m2/repository/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar:/Users/ggross/.m2/repository/org/cloudfoundry/cloudfoundry-runtime/0.8.1/cloudfoundry-runtime-0.8.1.jar:"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -42,11 +42,11 @@
     <property name="java.specification.version" value="1.6"/>
     <property name="file.encoding" value="MacRoman"/>
     <property name="user.name" value="ggross"/>
-    <property name="java.class.path" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/test-classes:/Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/classes:/Users/ggross/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/ggross/.m2/repository/org/springframework/spring/2.5.6/spring-2.5.6.jar:/Users/ggross/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/ggross/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar:/Users/ggross/.m2/repository/org/cloudfoundry/cloudfoundry-runtime/0.8.1/cloudfoundry-runtime-0.8.1.jar:"/>
+    <property name="java.class.path" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/test-classes:/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/classes:/Users/ggross/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/ggross/.m2/repository/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/ggross/.m2/repository/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/ggross/.m2/repository/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar:/Users/ggross/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar:/Users/ggross/.m2/repository/org/cloudfoundry/cloudfoundry-runtime/0.8.1/cloudfoundry-runtime-0.8.1.jar:"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/surefire/surefirebooter3384561419455382998.jar /Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/surefire/surefire8104760763257575979tmp /Users/ggross/Dropbox/sts-work/SpringJDBCExample/target/surefire/surefire113973856490771445tmp"/>
+    <property name="sun.java.command" value="/Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/surefire/surefirebooter5288598214219499241.jar /Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/surefire/surefire3615363336338189518tmp /Users/ggross/Dropbox/sts-work/SpringJDBCExampleSimpleStandaloneForCF/target/surefire/surefire5381735498105650814tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
