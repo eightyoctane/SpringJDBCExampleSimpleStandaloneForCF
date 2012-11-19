@@ -18,6 +18,7 @@ public class JdbcCustomerDAO implements CustomerDAO
 		this.dataSource = dataSource;
 	}
 	
+	
 	public void insert(Customer customer){
 		
 		String sql = "INSERT INTO CUSTOMER " +
