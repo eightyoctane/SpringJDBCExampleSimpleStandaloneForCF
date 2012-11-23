@@ -10,12 +10,19 @@ import org.cloudfoundry.client.lib.CloudFoundryClient;
 import org.cloudfoundry.client.lib.domain.CloudApplication;
 import org.cloudfoundry.client.lib.domain.CloudEntity;
 import org.cloudfoundry.client.lib.domain.CloudInfo;
+import org.cloudfoundry.runtime.env.CloudEnvironment;
 
 public class App 
 {
     public static void main( String[] args )
     {
+		if(new CloudEnvironment().isCloudFoundry()) {
+			  //activate cloud profile
+			  System.setProperty("spring.profiles.active","cloud");
+		}
+    	//ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml", App.class);
     	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
+
     	 
         CustomerDAO customerDAO = (CustomerDAO) context.getBean("customerDAO");
         
