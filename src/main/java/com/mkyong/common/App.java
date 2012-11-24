@@ -20,8 +20,8 @@ public class App
 			  //activate cloud profile
 			  System.setProperty("spring.profiles.active","cloud");
 		}
-    	//ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml", App.class);
-    	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
+    	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml", App.class);
+    	//ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
 
     	 
         CustomerDAO customerDAO = (CustomerDAO) context.getBean("customerDAO");
