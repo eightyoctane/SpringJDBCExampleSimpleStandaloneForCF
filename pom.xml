@@ -16,6 +16,8 @@
   
   <build>
     <plugins>
+
+<!-- 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>appassembler-maven-plugin</artifactId>
@@ -24,11 +26,35 @@
           <programs>
             <program>
               <mainClass>com.mkyong.common.App</mainClass>
-              <name>app</name>
+              <name>App</name>
             </program>
           </programs>
         </configuration>
       </plugin>
+-->
+      <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>appassembler-maven-plugin</artifactId> 
+			<version>1.2.2</version>
+           <executions>
+               <execution>
+                   <phase>package</phase>
+                   <goals>
+                       <goal>assemble</goal>
+                   </goals>
+                   <configuration>
+                       <assembledirectory>target</assembledirectory>
+                       <programs>
+                           <program>
+                               <mainClass>com.mkyong.common.App</mainClass>
+                           </program>
+                       </programs>
+                   </configuration>
+               </execution>
+           </executions>
+       </plugin>
+
+
     </plugins>
   </build>
 

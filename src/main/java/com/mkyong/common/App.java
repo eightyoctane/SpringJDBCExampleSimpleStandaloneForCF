@@ -2,6 +2,8 @@ package com.mkyong.common;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
 import com.mkyong.customer.dao.CustomerDAO;
 import com.mkyong.customer.model.Customer;
 
@@ -23,6 +25,8 @@ public class App
     	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml", App.class);
     	//ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
 
+    	//FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext("Spring-Module.xml", App.class);
+    	
     	 
         CustomerDAO customerDAO = (CustomerDAO) context.getBean("customerDAO");
         
