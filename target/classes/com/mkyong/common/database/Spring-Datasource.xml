@@ -63,11 +63,9 @@ xsi:schemaLocation="
 		<cloud:data-source id="dataSource" />
 
 		<jdbc:initialize-database data-source="dataSource" ignore-failures="DROPS">
-			<jdbc:script location="classpath:org/springframework/batch/core/schema-mysql.sql" />
-			<jdbc:script location="classpath:customer_mysql.sql" />
-			
+		<!-- <jdbc:script location="classpath:org/springframework/batch/core/schema-mysql.sql" /> -->
+			<jdbc:script location="classpath:customer_mysql.sql" />		
 		</jdbc:initialize-database>
-		
 	</beans>
 	
 
