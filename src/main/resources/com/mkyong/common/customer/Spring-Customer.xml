@@ -9,11 +9,6 @@ xsi:schemaLocation="
         http://schema.cloudfoundry.org/spring
         http://schema.cloudfoundry.org/spring/cloudfoundry-spring.xsd">
 
-<!-- 
-xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
--->
-
 	<bean id="customerDAO" class="com.mkyong.customer.dao.impl.JdbcCustomerDAO">
 		<property name="dataSource" ref="dataSource" />
 	</bean>

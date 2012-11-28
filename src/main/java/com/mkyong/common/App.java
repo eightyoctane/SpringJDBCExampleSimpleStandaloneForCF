@@ -2,16 +2,10 @@ package com.mkyong.common;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import com.mkyong.customer.dao.CustomerDAO;
 import com.mkyong.customer.model.Customer;
 
-import org.cloudfoundry.client.lib.CloudCredentials;
-import org.cloudfoundry.client.lib.CloudFoundryClient;
-import org.cloudfoundry.client.lib.domain.CloudApplication;
-import org.cloudfoundry.client.lib.domain.CloudEntity;
-import org.cloudfoundry.client.lib.domain.CloudInfo;
 import org.cloudfoundry.runtime.env.CloudEnvironment;
 
 public class App 
@@ -22,18 +16,16 @@ public class App
 			  //activate cloud profile
 			  System.setProperty("spring.profiles.active","cloud");
 		}
-    	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml", App.class);
-    	//ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
-
-    	//FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext("Spring-Module.xml", App.class);
-    	
+		// Note: App.class defines the base path which is used to locate Spring-Module.xml
+		// Note also: if building in STS configure the build config output path to send Spring-Module.xml to that location!
+    	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml", App.class);    	
     	 
         CustomerDAO customerDAO = (CustomerDAO) context.getBean("customerDAO");
         
-        Customer customer = new Customer(4, "mkyong",28);
+        Customer customer = new Customer(4, "mkyong", 28);
         customerDAO.insert(customer);
     	
-        Customer customer1 = customerDAO.findByCustomerId(1);
+        Customer customer1 = customerDAO.findByCustomerId(4);
         System.out.println(customer1);
         
     }
