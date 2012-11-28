@@ -12,6 +12,9 @@ Logging is used to monitor app results rather than using a web interface. The ap
 assembler. Currently on Cloud Foundry, manual Service configuration must be used, so the xml file must differentiate between "local" deployment 
 versus cloud deployment.
 
+This standalone app relies on appassembler for invocation (see doc below). 
+From the app assembler doc, The startup command will be "$ sh target/appassembler/bin/app"
+
 As is always the case, a great deal of care must be taken to insure that three items are perfect:
 1. the bean xml definition files
 2. the pom xml file
